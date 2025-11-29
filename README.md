@@ -56,11 +56,11 @@ This solution introduces **uncertainty-aware forecasting*** with:
 
 Simulates how revenue changes under:
 
-- 🔵 Optimistic scenario: High demand + stable inflation
+- 🔵 **Optimistic scenario:** High demand + stable inflation
 
-- ⚪ Baseline scenario: Expected economic trend
+- ⚪ **Baseline scenario:** Expected economic trend
 
-- 🔴 Pessimistic scenario: Low demand + recession shock
+- 🔴 **Pessimistic scenario:** Low demand + recession shock
 
 **✔ Economic Indicators Included**
 
@@ -95,3 +95,41 @@ Simulates how revenue changes under:
 - Scenario planner
 
 - Leading economic indicator correlations
+
+## 📂 Project Structure
+
+```bash
+Revenue_Forecasting_Uncertainty/
+│
+├── data/
+│   ├── raw/                 # Source CSVs (sales, economic indicators)
+│   └── processed/           # Cleaned and merged datasets
+│
+├── scripts/
+│   ├── load_data.py         # Load and validate datasets
+│   ├── clean_data.py        # Impute, normalize, join data
+│   ├── feature_engineering.py # Lag features, rolling windows, macro features
+│   ├── forecast_models.py   # Prophet/XGBoost/ARIMA models
+│   ├── scenario_simulation.py # Stress testing & Monte Carlo
+│   ├── evaluate_model.py    # RMSE/MAPE/backtesting
+│   └── app.py               # Streamlit forecast visualizer (optional)
+│
+├── sql/
+│   ├── 01_create_tables.sql
+│   ├── 02_cleaning.sql
+│   ├── 03_feature_engineering.sql
+│   ├── 04_kpi_metrics.sql
+│   └── 05_views_for_powerbi.sql
+│
+├── dashboard/
+│   └── PowerBI_Report_Spec.md
+│
+├── docs/
+│   └── Workflow_Spec.md
+│
+├── models/
+│   └── revenue_forecast_model.pkl
+│
+├── requirements.txt
+└── README.md
+```
