@@ -320,3 +320,14 @@ python scripts/scenario_simulation.py
 ```arduino
 streamlit run app.py
 ```
+## 📦 Deliverables
+
+- Machine learning forecasting model
+
+- Scenario simulation engine
+
+- Power BI dashboard
+
+- SQL analytics layer
+
+- Clean, reusable ETL pipeline
