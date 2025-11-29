@@ -133,3 +133,22 @@ Revenue_Forecasting_Uncertainty/
 ├── requirements.txt
 └── README.md
 ```
+## 🔧 Tech Stack
+Languages & Tools
+
+- Python (pandas, numpy, scikit-learn)
+
+- Prophet
+
+- XGBoost
+
+- statsmodels (ARIMA/SARIMA)
+
+- SQL (Postgres / SQL Server)
+
+- Power BI / Power Query
+
+- Streamlit
+
+- Jupyter Notebook
+
