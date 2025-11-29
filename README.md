@@ -41,3 +41,57 @@ This solution introduces **uncertainty-aware forecasting*** with:
 
 - Monte-Carlo simulations
 
+## 🚀 Key Features
+**✔ Combined ML + Time Series Modeling**
+
+- Prophet with regressors
+
+- XGBoost regressors
+
+- ARIMA/SARIMA baseline
+
+- Feature drift checks
+
+**✔ Scenario Modeling**
+
+Simulates how revenue changes under:
+
+- 🔵 Optimistic scenario: High demand + stable inflation
+
+- ⚪ Baseline scenario: Expected economic trend
+
+- 🔴 Pessimistic scenario: Low demand + recession shock
+
+**✔ Economic Indicators Included**
+
+- CPI (inflation)
+
+- Unemployment rate
+
+- GDP growth
+
+- Consumer sentiment index
+
+- Industry-specific leading indicators
+
+**✔ Automated Data Pipeline**
+
+- Cleans raw sales data
+
+- Joins external economic datasets
+
+- Generates features
+
+- Produces monthly or weekly forecasts
+
+**✔ Power BI Integration**
+
+- Dynamic dashboard pages:
+
+- Revenue trends
+
+- Forecast vs actuals
+
+- Scenario planner
+
+- Leading economic indicator correlations
