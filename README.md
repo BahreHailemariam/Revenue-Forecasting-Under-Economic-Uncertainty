@@ -261,3 +261,25 @@ inflation +1.5%
 - Contribution to variance
 
 - Shock modeling
+
+🧪 Model Evaluation
+
+Metrics included:
+
+- RMSE
+
+- MAE
+
+- MAPE
+
+- sMAPE
+
+- Backtesting accuracy
+
+- Confidence intervals
+
+Example acceptable thresholds:
+```matlab
+MAPE < 12%
+RMSE reduction vs baseline > 20%
+```
