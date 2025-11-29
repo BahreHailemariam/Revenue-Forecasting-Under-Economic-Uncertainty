@@ -226,3 +226,38 @@ inflation +1.5%
 - Seasonality & trend decomposition
 
 - Demand elasticity visuals
+
+## 📊 Power BI Dashboard Pages
+**1️⃣ Revenue Overview**
+
+- Revenue YoY & MoM
+
+- Trend + seasonality decomposition
+
+- Industry comparison
+
+**2️⃣ Forecast & Scenario Planner**
+
+- Baseline forecast
+
+- Optimistic & pessimistic overlays
+
+- Parameter sliders for inflation, consumer sentiment
+
+**3️⃣ Economic Indicator Impact**
+
+- Correlation matrix
+
+- Revenue vs CPI
+
+- Revenue vs unemployment
+
+- Elasticity curve
+
+**4️⃣ Risk & Sensitivity Analysis**
+
+- Tornado chart
+
+- Contribution to variance
+
+- Shock modeling
