@@ -152,3 +152,77 @@ Languages & Tools
 
 - Jupyter Notebook
 
+## 🛠 Detailed Workflow
+**1. Data Ingestion**
+
+- Load sales history
+
+- Load macroeconomic datasets via API
+
+   - FRED API (Inflation, GDP, unemployment)
+
+   - Consumer sentiment index
+
+**2. Cleaning & Normalization**
+
+- Impute missing months
+
+- Handle outliers using IQR or STL decomposition
+
+- Normalize economic data to matching frequency
+
+**3. Feature Engineering**
+
+- Lag features (lag1, lag3, lag6, lag12)
+
+- Rolling means (3M, 6M)
+
+- Year-over-Year % change
+
+- Inflation-adjusted revenue
+
+- Leading indicators (economic → revenue shift)
+
+**4. Forecast Model Pipeline**
+
+Models trained:
+| Model                | Purpose                                  |
+| -------------------- | ---------------------------------------- |
+| Prophet + regressors | Trend + seasonality + external variables |
+| XGBoost              | Captures non-linear behavior             |
+| ARIMA/SARIMA         | Baseline classical model                 |
+
+Backtesting window:
+
+```24–36 months rolling forecast validation```
+
+**5. Scenario Simulation**
+
+Each scenario modifies:
+
+- CPI projections
+
+- Consumer sentiment
+
+- Demand elasticity
+
+- Macro shock multipliers
+
+Example pessimistic shock:
+```matlab
+unemployment +2%
+consumer_spending -3%
+inflation +1.5%
+```
+
+**6. Power BI Reporting**
+
+- Forecast vs Actual charts
+
+- Scenario comparison
+
+- Economic impacts
+
+- Seasonality & trend decomposition
+
+- Demand elasticity visuals
