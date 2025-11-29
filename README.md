@@ -283,3 +283,40 @@ Example acceptable thresholds:
 MAPE < 12%
 RMSE reduction vs baseline > 20%
 ```
+## 🗂 Example Use Cases
+
+- Financial planning (FP&A)
+
+- Budgeting and forecasting
+
+- Investment decision-making
+
+- Stress testing & risk management
+
+- Price strategy
+
+- Scenario analysis during recessions
+
+ ## 🚀 How to Run the Project
+**1. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+**3. Run ETL pipeline**
+```bash
+python scripts/load_data.py
+python scripts/clean_data.py
+python scripts/feature_engineering.py
+```
+**4. Train Forecast Models**
+ ```bash
+python scripts/forecast_models.py
+```
+**5. Generate scenarios**
+```bash
+python scripts/scenario_simulation.py
+```
+**5. Launch Streamlit app (optional)**
+```arduino
+streamlit run app.py
+```
