@@ -17,3 +17,27 @@ This project predicts future revenue trends for a business operating in unstable
 - Powers **Power BI dashboards** for real-time analysis
 
 The project uses **Python, SQL, Prophet/ARIMA/XGBoost,** and **Power BI.**
+
+## 🎯 Business Problem
+
+Companies face unpredictable changes caused by:
+
+- Inflation volatility
+
+- Interest rate changes
+
+- Market disruptions
+
+- Consumer confidence shifts
+
+Traditional forecasting models fail because they assume stable patterns.
+This solution introduces **uncertainty-aware forecasting*** with:
+
+- Time series modeling
+
+- External regressors
+
+- Stress-testing scenarios
+
+- Monte-Carlo simulations
+
