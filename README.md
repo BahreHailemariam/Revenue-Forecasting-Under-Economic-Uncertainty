@@ -331,3 +331,13 @@ streamlit run app.py
 - SQL analytics layer
 
 - Clean, reusable ETL pipeline
+
+## 📚 Future Enhancements
+
+- LSTM / Deep Learning forecasting
+
+- Bayesian models for uncertainty quantification
+
+- AutoML pipeline
+
+- Anomaly detection for revenue dips
