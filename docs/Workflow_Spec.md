@@ -186,7 +186,7 @@ Trained model files:
 Predictions written to:
 `data/predictions/base_forecast.csv`
 
-📉 7. Backtesting Framework
+## 📉 7. Backtesting Framework
 
 Uses walk-forward evaluation.
 
@@ -247,3 +247,34 @@ Runs 10,000 simulations with:
 - `data/predictions/scenario_forecasts.csv`
 
 - Percentile bands (P5, P50, P95)
+
+## 📊 9. KPI & Analytics Layer
+**Main KPIs**
+
+- **Revenue YoY %**
+
+- **Revenue MoM %**
+
+- **Revenue Volatility Index**
+
+- **Revenue at Risk (RAR)**
+
+- **Economic correlation matrix**
+
+- **Inflation-adjusted growth**
+
+- **Uncertainty confidence bands**
+
+**Output Views**
+
+Defined in SQL:
+
+- `vw_forecasting_dataset`
+
+- `vw_scenario_comparison`
+
+- `vw_economic_drivers`
+
+- `vw_executive_summary`
+
+  
