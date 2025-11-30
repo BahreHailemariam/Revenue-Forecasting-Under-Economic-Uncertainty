@@ -1,8 +1,20 @@
-# Workflow Specification - Real-Time Supply Chain Analytics Demo
+# 🧠 Workflow Specification  — Revenue Forecasting Under Economic Uncertainty
 
-1. Data Ingestion - read CSVs or simulated stream files
-2. Transformation - clean timestamps, calculate delivery time, normalize SKUs
-3. Load to Warehouse - write to SQLite tables (orders, routes)
-4. KPI Calculations - compute on-time %, delivery times, stock turnover
-5. Visualization - Streamlit app reads warehouse and displays KPIs, charts, and alerts
-6. Automation - automate ETL loop via schedule or cron
+-A complete end-to-end pipeline specifications, and alerts-
+
+## 📌 1. Overview
+
+This workflow describes a full data-to-decision pipeline for forecasting revenue under volatile macroeconomic conditions.
+It integrates:
+
+- **Historical business revenue**
+
+- **Macroeconomic indicators (CPI, unemployment, GDP growth, consumer sentiment)**
+
+- **Machine Learning forecasting models**
+
+- **Scenario stress testing**
+
+- **Uncertainty-aware insights for Power BI and Streamlit**
+
+Designed for use by FP&A teams, executives, and data science groups.
