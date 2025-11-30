@@ -215,3 +215,35 @@ Weighted MAPE for low/high season
 - `reports/backtesting_report.json`
 
 - `reports/error_plots/`
+
+## 🌪️ 8. Scenario Simulation Engine
+
+Supports uncertainty-focused revenue planning.
+
+**8.1 Scenario Types**
+
+- **Base Case** (expected economic trajectory)
+
+- **Optimistic Case** (lower inflation, high sentiment)
+
+- **Recession Case**
+
+- **High Inflation Case**
+
+- **Custom CFO-defined scenarios**
+
+**8.2 Monte Carlo Simulation**
+
+Runs 10,000 simulations with:
+
+- Shock distributions (CPI, unemployment, GDP)
+
+- Revenue elasticity models
+
+- Random walk volatility
+
+**8.3 Output**
+
+- `data/predictions/scenario_forecasts.csv`
+
+- Percentile bands (P5, P50, P95)
