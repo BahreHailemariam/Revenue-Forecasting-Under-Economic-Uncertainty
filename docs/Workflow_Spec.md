@@ -303,3 +303,30 @@ Dashboards include:
 - Uncertainty bands
 
 - Macro sensitivity explorer  
+
+## 🔁 11. Automation & Scheduling
+**11.1 Options**
+
+- Airflow DAG
+
+- Cron jobs
+
+- Azure Data Factory
+
+- AWS Lambda + EventBridge
+
+**11.2 Automated Tasks**
+
+- Daily macro refresh
+
+- Monthly revenue import
+
+- Weekly model drift check
+
+- Scheduled retraining
+
+- Auto-export of Power BI dataset
+
+- Email alerts for KPI deviation (±2σ)
+
+  
