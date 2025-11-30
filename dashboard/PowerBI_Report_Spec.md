@@ -27,9 +27,9 @@ This document defines the **pages, visuals, KPI logic, DAX measures, filters, an
 
 **Dimension Tables**
 
-✔ `dim_date` – calendar, month, quarter, YOY keys
-✔ `dim_product` – category, segment
-✔ `dim_region` – country, region, channel
+✔ `dim_date` – calendar, month, quarter, YOY keys<br />
+✔ `dim_product` – category, segment<br />
+✔ `dim_region` – country, region, channel<br />
 ✔ `dim_economic_indicators` – inflation, interest rate, unemployment, CPI
 
 **Model Relationships**
