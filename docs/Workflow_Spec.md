@@ -329,4 +329,16 @@ Dashboards include:
 
 - Email alerts for KPI deviation (±2σ)
 
-  
+ ## 📦 12. Deliverables & Artifacts 
+
+| Folder              | Description               |
+| ------------------- | ------------------------- |
+| `/data/raw`         | Raw revenue & macro data  |
+| `/data/processed`   | Cleaned harmonized tables |
+| `/data/features`    | Feature store             |
+| `/data/predictions` | Forecasts & scenarios     |
+| `/models`           | Trained ML models         |
+| `/reports`          | Backtesting & diagnostics |
+| `/dashboard`        | Power BI specifications   |
+| `/scripts`          | Python ETL + ML pipeline  |
+
