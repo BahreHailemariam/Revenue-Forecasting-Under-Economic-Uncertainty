@@ -277,4 +277,29 @@ Defined in SQL:
 
 - `vw_executive_summary`
 
-  
+## 📺 10. Visualization & Reporting
+**10.1 Power BI**
+
+Dashboards include:
+
+- Executive Forecast Overview
+
+- Base vs Scenario Comparison
+
+- Uncertainty Bands
+
+- Economic Drivers Attribution
+
+- Revenue-at-Risk Monitoring
+
+**10.2 Streamlit App**
+
+- Interactive scenario sliders
+
+- Model explanation
+
+- Forecast curves
+
+- Uncertainty bands
+
+- Macro sensitivity explorer  
