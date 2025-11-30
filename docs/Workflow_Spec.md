@@ -98,3 +98,55 @@ Cleaned tables written to:
 - `data/processed/sales_clean.csv`
 
 - `data/processed/macro_clean.csv`
+
+## 🛠️ 5. Feature Engineering Layer
+
+Feature store builds predictive signals essential for forecasting.
+
+**5.1 Lag & Rolling Window Features**
+
+- revenue_lag_1
+
+- revenue_lag_3
+
+- revenue_lag_6
+
+- revenue_lag_12
+
+- rolling_avg_3
+
+- rolling_avg_6
+
+- rolling_std_6
+
+**5.2 Trend & Seasonality Extraction**
+
+- Month index
+
+- Year index
+
+- Seasonality sin/cos transforms
+
+**5.3 Macroeconomic Features**
+
+Merged from macro tables:
+
+- Inflation-adjusted revenue (`real_revenue`)
+
+- GDP growth impact
+
+- Consumer sentiment leading signal
+
+- CPI volatility index
+
+**5.4 Revenue Sensitivity Features**
+
+Elasticity-like indicators:
+```powershell
+ΔRevenue / ΔCPI
+ΔRevenue / ΔUnemploymentRate
+```
+**5.5 Output**
+
+`data/features/feature_store.csv`
+
