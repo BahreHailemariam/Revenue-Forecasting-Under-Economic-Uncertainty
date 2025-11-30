@@ -64,3 +64,37 @@ Pulled from:
 - `sales_raw.csv`
 
 - `macro_raw.csv`
+## 🧹 4. Data Cleaning & Harmonization
+**4.1 Revenue Data Cleaning**
+
+- Remove negative revenue
+
+- Fix missing dates with forward-fill
+
+- Resolve inconsistent channel naming
+
+- Remove outliers with IQR or MAD
+
+**4.2 Economic Data Cleaning**
+
+- Fill missing months using linear interpolation
+
+- Normalize units (CPI = index base 100)
+
+- Remove noise with rolling smoothing if required
+
+**4.3 Time Alignment**
+
+Ensure single continuous time series:
+
+```pgsql
+full_date_range = MIN(sales.date) → MAX(sales.date)
+```
+
+**4.4 Output**
+
+Cleaned tables written to:
+
+- `data/processed/sales_clean.csv`
+
+- `data/processed/macro_clean.csv`
