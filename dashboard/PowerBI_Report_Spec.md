@@ -1,7 +1,5 @@
-# Power BI Report Spec - Supply Chain Analytics Demo
-Pages:
-- Logistics Overview: On-time delivery, route performance, delays
-- Inventory Performance: stock turnover, reorder alerts
-- Supplier Insights: lead time, on-time supplier rate
-DAX examples:
-OnTimeDelivery% = DIVIDE(CALCULATE(COUNTROWS(Orders), Orders[delay_hours] <= 24), COUNTROWS(Orders))
+# 📘 Power BI Report Specification
+
+### Revenue Forecasting Under Economic Uncertainty
+
+This document defines the **pages, visuals, KPI logic, DAX measures, filters, and data model** used to build an enterprise-grade Power BI report for forecasting revenue under varying economic conditions.
