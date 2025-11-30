@@ -1,6 +1,6 @@
 # 🧠 Workflow Specification  — Revenue Forecasting Under Economic Uncertainty
 
--A complete end-to-end pipeline specifications, and alerts-
+_A complete end-to-end pipeline specifications, and alerts_
 
 ## 📌 1. Overview
 
@@ -150,3 +150,38 @@ Elasticity-like indicators:
 
 `data/features/feature_store.csv`
 
+## 🤖 6. Forecasting Models
+
+Multiple models are trained to handle stability vs volatility.
+
+**6.1 Model Types**
+
+1.Prophet
+   Excellent for business seasonality
+
+2.ARIMA / SARIMAX
+   Best for linear patterns with macroeconomic regressors
+
+3.XGBoost Regressor
+   Handles non-linear interactions, elasticities, and external shocks
+
+4.(Optional) Deep Learning (LSTM)
+
+**6.2 Workflow**
+
+- Train using 3–5 years of data
+
+- Hyperparameter search
+
+- Cross-validation with rolling windows
+
+- Weighted model ensemble (if enabled)
+
+**6.3 Output**
+
+Trained model files:
+`models/prophet_model.pkl`
+`models/xgb_model.pkl`
+
+Predictions written to:
+`data/predictions/base_forecast.csv`
