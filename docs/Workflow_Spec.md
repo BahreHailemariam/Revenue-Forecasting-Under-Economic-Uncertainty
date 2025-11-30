@@ -185,3 +185,33 @@ Trained model files:
 
 Predictions written to:
 `data/predictions/base_forecast.csv`
+
+📉 7. Backtesting Framework
+
+Uses walk-forward evaluation.
+
+**7.1 Metrics**
+
+- RMSE
+
+- MAE
+
+- MAPE
+
+- sMAPE
+
+Weighted MAPE for low/high season
+
+**7.2 Error Diagnostics**
+
+- Forecast bias (over/under prediction)
+
+- Stability under high volatility
+
+- Model drift detection
+
+**7.3 Output**
+
+- `reports/backtesting_report.json`
+
+- `reports/error_plots/`
