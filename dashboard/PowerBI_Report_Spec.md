@@ -258,3 +258,19 @@ SWITCH(
     [Forecast Revenue]
 )
 ```
+
+## 🧩 3. Filters & Slicers (Used Across Pages)
+
+Date range
+
+Region
+
+Product Category
+
+Economic Indicator
+
+Scenario Selector
+
+Forecast Model Selector
+
+Confidence Interval Toggle
