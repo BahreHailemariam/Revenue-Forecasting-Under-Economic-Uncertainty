@@ -172,3 +172,28 @@ DAX
 Scenario Forecast Revenue =
 [Forecast Revenue] * (1 + 'Inflation_Shock'[Inflation_Shock Value] * 0.3)
 ```
+
+5️⃣ Monte Carlo Risk Simulation
+Purpose:
+
+Illustrates uncertainty bands and probabilistic outcomes.
+
+Visuals
+
+Histogram of simulated outcomes
+
+Box & whisker plot for percentiles
+
+P5 / P50 / P95 cards
+
+Line chart with shaded uncertainty intervals
+
+Data
+
+Monte Carlo outputs are imported as:
+
+simulation_run
+
+simulated_revenue
+
+percentile_key
