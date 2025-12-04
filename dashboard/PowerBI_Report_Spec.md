@@ -274,3 +274,17 @@ Scenario Selector
 Forecast Model Selector
 
 Confidence Interval Toggle
+
+## 🛠 4. Required Power BI Features
+
+What-If parameter modeling
+
+Python visual (optional) for correlation heatmap
+
+Bookmarks for switching scenarios
+
+Field parameters for model selection
+
+Custom visual: Forecasting Confidence Interval Chart
+
+Deneb/Vega for advanced simulations (optional)
