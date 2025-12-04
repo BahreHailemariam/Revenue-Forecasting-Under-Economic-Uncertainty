@@ -57,3 +57,18 @@ Visuals
 | Ribbon Chart | Category-level revenue share over time                             |
 | Map          | Revenue by geography                                               |
 | Bar Chart    | Top 10 revenue drivers                                             |
+
+Important DAX Measures
+```
+Total Revenue = SUM(fact_revenue[revenue_actual])
+
+Forecast Revenue = SUM(fact_revenue[revenue_forecast])
+
+YOY Growth % = 
+VAR Current = [Total Revenue]
+VAR LastYear = CALCULATE([Total Revenue], DATEADD(dim_date[date], -1, YEAR))
+RETURN DIVIDE(Current - LastYear, LastYear)
+
+Forecast Accuracy % =
+1 - ABS([Total Revenue] - [Forecast Revenue]) / [Total Revenue]
+```
