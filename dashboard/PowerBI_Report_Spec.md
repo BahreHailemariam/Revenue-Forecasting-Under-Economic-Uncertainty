@@ -217,3 +217,44 @@ DAX
 ```
 Volatility = STDEVX.P(VALUES(fact_revenue[date]), [Total Revenue])
 ```
+
+7️⃣ Financial Stress Testing Dashboard
+Purpose:
+
+Quantify how extreme events (recession, spikes in inflation) impact revenue.
+
+Visuals
+
+Stress test selector:
+
+Mild recession
+
+Moderate recession
+
+Severe recession
+
+Post-shock recovery
+
+Scenario waterfall chart
+
+Table of revenue impacts by region & product
+
+KPI risk signals:
+
+High-risk regions
+
+High elasticity products
+
+Negative margins
+
+DAX
+```
+StressTestRevenue =
+SWITCH(
+    SELECTEDVALUE('StressTest'[Scenario]),
+    "Mild Recession", [Forecast Revenue] * 0.97,
+    "Moderate Recession", [Forecast Revenue] * 0.92,
+    "Severe Recession", [Forecast Revenue] * 0.85,
+    [Forecast Revenue]
+)
+```
