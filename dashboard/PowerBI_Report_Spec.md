@@ -95,3 +95,27 @@ CALCULATE([Total Revenue], USERELATIONSHIP(dim_economic_indicators[date], dim_da
 Correlation Helper = 
 -- exported from Python, imported into Power BI as table for heatmap
 ```
+Filters
+
+Economic indicator slicer
+
+Region
+
+Product category
+
+3️⃣ Forecast Models Comparison
+Purpose:
+
+Compare Prophet, ARIMA, and XGBoost predictions directly.
+
+Visuals
+
+Multi-line comparison chart (Actual vs Prophet vs XGBoost vs ARIMA)
+
+Accuracy comparison table (RMSE, MAPE, SMAPE)
+
+Feature contribution bar chart (from XGBoost SHAP values)
+
+Forecast horizon slicer selector
+
+DAX Measures (Model Metrics)
