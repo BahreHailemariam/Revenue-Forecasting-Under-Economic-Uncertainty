@@ -42,4 +42,18 @@ This document defines the **pages, visuals, KPI logic, DAX measures, filters, an
 
 - dim_economic_indicators (date) → dim_date — inactive, activated via DAX
 
-  
+  ## 📄 2. Report Pages & Visual Layout
+1️⃣ Revenue Overview (Executive Dashboard)
+Purpose:
+
+Provide top-level performance trends, forecast accuracy, and high-level financial signals.
+
+Visuals
+
+| Visual       | Description                                                        |
+| ------------ | ------------------------------------------------------------------ |
+| KPI Cards    | Total Revenue, Forecasted Revenue, YOY Growth %, Forecast Accuracy |
+| Line Chart   | Actual vs Forecast vs Upper/Lower Confidence Intervals             |
+| Ribbon Chart | Category-level revenue share over time                             |
+| Map          | Revenue by geography                                               |
+| Bar Chart    | Top 10 revenue drivers                                             |
