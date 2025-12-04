@@ -288,3 +288,17 @@ Field parameters for model selection
 Custom visual: Forecasting Confidence Interval Chart
 
 Deneb/Vega for advanced simulations (optional)
+
+## 📦 5. Export Requirements
+
+All pages optimized for 16:9 widescreen
+
+Dark theme or corporate theme optional
+
+Include tooltips pages:
+
+Revenue Forecast Tooltip
+
+Product Drilldown Tooltip
+
+Scenario Impact Tooltip
