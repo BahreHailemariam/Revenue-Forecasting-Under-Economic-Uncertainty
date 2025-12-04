@@ -72,3 +72,26 @@ RETURN DIVIDE(Current - LastYear, LastYear)
 Forecast Accuracy % =
 1 - ABS([Total Revenue] - [Forecast Revenue]) / [Total Revenue]
 ```
+2️⃣ Economic Indicator Correlation
+Purpose:
+
+Show how macroeconomic trends influence revenue.
+
+Visuals
+
+Scatter plot: Inflation vs Revenue
+
+Line chart: CPI, Interest Rates, Revenue on dual axis
+
+Heatmap: Correlation matrix (Revenue vs macro indicators)
+
+Decomposition tree: Revenue drivers
+
+DAX Measures
+```
+Inflation Impact =
+CALCULATE([Total Revenue], USERELATIONSHIP(dim_economic_indicators[date], dim_date[date]))
+
+Correlation Helper = 
+-- exported from Python, imported into Power BI as table for heatmap
+```
