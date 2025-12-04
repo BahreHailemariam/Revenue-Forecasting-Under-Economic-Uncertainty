@@ -197,3 +197,23 @@ simulation_run
 simulated_revenue
 
 percentile_key
+
+6️⃣ Product & Region Drilldown
+Purpose:
+
+Identify pockets of risk and opportunity.
+
+Visuals
+
+Hierarchical drilldown: Region → Country → Product
+
+Clustered bar: Revenue volatility by category
+
+Waterfall: YOY changes by product
+
+Running totals table
+
+DAX
+```
+Volatility = STDEVX.P(VALUES(fact_revenue[date]), [Total Revenue])
+```
