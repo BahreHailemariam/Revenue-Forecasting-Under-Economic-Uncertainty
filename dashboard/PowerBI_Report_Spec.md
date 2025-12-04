@@ -119,3 +119,56 @@ Feature contribution bar chart (from XGBoost SHAP values)
 Forecast horizon slicer selector
 
 DAX Measures (Model Metrics)
+```
+RMSE = SQRT(AVERAGE((fact_revenue[revenue_actual] - fact_revenue[revenue_forecast])^2))
+
+MAPE = 
+AVERAGEX(
+    fact_revenue,
+    ABS(fact_revenue[revenue_actual] - fact_revenue[revenue_forecast]) 
+        / fact_revenue[revenue_actual]
+)
+```
+
+4️⃣ Scenario Planning – Economic Shock Simulator
+Purpose:
+
+Model revenue impact using hypothetical economic shocks.
+
+Visuals
+
+What-If parameters:
+
+% Inflation Increase
+
+Interest Rate Shock
+
+Consumer Spending Index
+
+Scenario Output Table:
+
+Base Case
+
+Low Case
+
+High Case
+
+Worst Case
+
+Tornado chart for sensitivity analysis
+
+Simulation timeline chart
+
+What-If Parameters (Power BI built-in)
+
+Inflation_Shock[%]
+
+Interest_Shock[%]
+
+Demand_Shock[%]
+
+DAX
+```
+Scenario Forecast Revenue =
+[Forecast Revenue] * (1 + 'Inflation_Shock'[Inflation_Shock Value] * 0.3)
+```
